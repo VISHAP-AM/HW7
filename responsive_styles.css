@@ -1,0 +1,13 @@
+@media screen and (min-width: 992px) {
+    .headingInfoSect{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .productsMainSection{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+}
