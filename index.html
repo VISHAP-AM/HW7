@@ -31,7 +31,11 @@
 
 <main>
     <section class="baseImgSect">
-        <img class="baseImg" src="images/pink.png" height="560" alt="mainImg"/>
+        <picture>
+            <source srcset="images/400x560.png" type="image/png" media="(max-width: 991px)"/>
+            <source srcset="images/701x426.png" type="image/png" media="(min-width: 992px)"/>
+            <img class="baseImg" src="images/400x560.png" alt="Main img"/>
+        </picture>
     </section>
 
     <h4 class="articleText">Our team</h4>
@@ -85,14 +89,22 @@
 
         <section class="productsListSection">
             <section class="productInnerSection">
-                <img src="images/prod_mobile.png" height="275" width="100%" alt="Product img"/>
+                <picture>
+                    <source srcset="images/prod_mobile.png" type="image/png" media="(max-width: 991px)"/>
+                    <source srcset="images/prod_tablet.png" type="image/png" media="(min-width: 992px)"/>
+                    <img class="productImg" src="images/prod_mobile.png" alt="Product img"/>
+                </picture>
                 <p class="productNameP">Product 1</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
             </section>
         </section>
         <section class="productsListSection">
             <section class="productInnerSection">
-                <img src="images/prod_mobile.png" height="275" width="100%" alt="Product img"/>
+                <picture>
+                    <source srcset="images/prod_mobile.png" type="image/png" media="(max-width: 991px)"/>
+                    <source srcset="images/prod_tablet.png" type="image/png" media="(min-width: 992px)"/>
+                    <img class="productImg" src="images/prod_mobile.png" alt="Product img"/>
+                </picture>
                 <p class="productNameP">Product 1</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
             </section>
