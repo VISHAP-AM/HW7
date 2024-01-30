@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {  /* TABLET */
     .headingInfoSect{
         display: flex;
         flex-direction: row;
@@ -8,6 +8,84 @@
         display: flex;
         flex-direction: row;
     }
+}
 
-    
+@media screen and (min-width: 992px) {  /* LAPTOP */
+    .headingInfoSect {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .productsMainSection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-container {
+        display: none;
+    }
+
+    header:has(> .navbar > .container > input[type="checkbox"]:checked) {
+        background: #797979;
+    }
+
+    .menu:has(+ .container > input[type="checkbox"]:checked) {
+        display: flex;
+        flex-direction: row;
+        transform: none;
+    }
+
+    .navbar .menu {
+        margin: 0px;
+        padding: 0px;
+        background-color: #797979;
+        display: flex;
+        justify-content: center;
+        box-shadow: none;
+        max-width: 100%;
+        height: 100%;
+        transform: none;
+    }
+
+    header {
+        height: 3rem;
+        background-color: #797979;
+        display: flex;
+        justify-content: baseline;
+    }
+
+    .lastLi {
+        margin-top: 0px;
+    }
+
+    .linkInMenu {
+        display: flex;
+        flex-direction: row;
+        width: 15rem;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu > li {
+        background-color: #60DBF6;
+        display: flex;
+        height: 2rem;
+        width: 14rem;
+        list-style: none;
+        margin-bottom: 0rem;
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    .firstLi {
+        margin-left: 1rem;
+    }
 }

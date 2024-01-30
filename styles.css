@@ -121,7 +121,7 @@ header {
 .navbar .menu li {
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .menu:has(+ .container > input[type="checkbox"]:checked) {
